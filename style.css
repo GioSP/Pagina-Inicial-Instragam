@@ -29,19 +29,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
 }
 
-.Instragam-phone img {
-    height: 50%;
-}
 
 .Instragam-continue {
     display: flex;
     align-items: center; /*horizontal*/
     justify-content: space-around; /*vertical*/
     flex-direction: column;
-    width: 50%;
+    height: 97%;
+    width: 70%;
     min-width: 34rem;
 }
 
@@ -51,8 +49,8 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    width: 100%;
-    padding: 1.3rem 0;
+    width: 82%;
+    padding: 10px 0;
     border: 1px solid lightgrey;
 }
 
@@ -68,12 +66,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 100%;
     overflow: hidden;
 }
 
-.profile-photo img {
-    height: 10rem;
+ .Instragam-phone{
+    height: 50%;
 }
 
 .Instragam-login {
@@ -118,25 +116,18 @@ body {
     width: 10rem;
     background-size: cover;
 }
-
-.app-dowload:nth-child(1) {
-    background-image: url('./imagem\ app\ store3.png');
-}
-
-.app-dowload:nth-child(2) {
-    background-image: url('./imagem\ google\ play2.png');
-}
     
 /* media queries */ 
 
+@media only screen and (max-device-width: 900px) {
+     .menu { width:100%; } 
+    }
 
-@media(max-width:1024px) {
+ /*@media(max-width: 650px) { 
     .Instragam-wrapper {
         width: 90px;
     }
-}
 
-@media(max-width: 650px) {
     body {
         background-color: #ffffff;
     }
